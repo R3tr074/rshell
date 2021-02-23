@@ -4,7 +4,7 @@ Rshell is a automatic reverse shell generator
 
 ## Installation
 
-Install [here](/releases), or just execute this:
+Install [here](https://github.com/R3tr074/rshell/releases), or just execute this:
 
 ```bash
 wget https://git.io/Jt5k5 -O rshell # to amd64
