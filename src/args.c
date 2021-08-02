@@ -49,7 +49,7 @@ void switch_options(int arg, char *optarg, options_t *options) {
       options->port = optarg;
       break;
 
-    case 's':
+    case 'l':
       options->sh = optarg;
       break;
 
@@ -67,12 +67,12 @@ void options_parser(int argc, char *argv[], options_t *options) {
   static struct option long_options[] = {
       {"help", no_argument, 0, 'h'},        {"version", no_argument, 0, 'v'},
       {"host", required_argument, 0, 'a'},  {"port", required_argument, 0, 'p'},
-      {"shell", required_argument, 0, 's'},
+      {"lang", required_argument, 0, 'l'},
   };
 
   while (true) {
     int option_index = 0;
-    arg = getopt_long(argc, argv, "hva:p:s:", long_options, &option_index);
+    arg = getopt_long(argc, argv, "hva:p:l:", long_options, &option_index);
 
     if (arg == -1) break;
 
