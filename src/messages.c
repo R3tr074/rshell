@@ -16,7 +16,7 @@ void help() {
 void usage() {
   fprintf(stdout, BROWN "Usage: " NO_COLOR);
   fprintf(stdout, "%s [options]\n", __PROGRAM_NAME__);
-  fprintf(stdout, "run:\nexport REVHOST=<host> \nor \nexport REVPORT=<port>\n");
+  fprintf(stdout, "run:\nexport RHOST=<host> \nor \nexport RPORT=<port>\n");
   fprintf(stdout, "To automatic set host and/or port\n");
 }
 
@@ -26,7 +26,7 @@ void options() {
           __PROGRAM_NAME__);
   fprintf(stdout,
           GRAY "\t-h|--help\n" NO_COLOR "\t\tPrints this help message\n\n");
-  fprintf(stdout, GRAY "\t-s|--shell\n" NO_COLOR "\t\tSet shell lang\n\n");
+  fprintf(stdout, GRAY "\t-l|--lang\n" NO_COLOR "\t\tSet shell lang\n\n");
   fprintf(stdout, GRAY "\t-p|--port\n" NO_COLOR "\t\tSet shell port\n\n");
   fprintf(stdout, GRAY "\t-a|--host\n" NO_COLOR "\t\tSet shell host\n\n");
 }
