@@ -28,7 +28,7 @@ void options() {
           GRAY "\t-h|--help\n" NO_COLOR "\t\tPrints this help message\n\n");
   fprintf(stdout, GRAY "\t-l|--lang\n" NO_COLOR "\t\tSet shell lang\n\n");
   fprintf(stdout, GRAY "\t-p|--port\n" NO_COLOR "\t\tSet shell port\n\n");
-  fprintf(stdout, GRAY "\t-a|--host\n" NO_COLOR "\t\tSet shell host\n\n");
+  fprintf(stdout, GRAY "\t-H|--host\n" NO_COLOR "\t\tSet shell host\n\n");
 }
 
 void author() {
