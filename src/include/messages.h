@@ -10,5 +10,6 @@ void usage();
 void version();
 void options();
 void author();
+void shell_types();
 
 #endif

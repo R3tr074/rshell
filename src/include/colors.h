@@ -8,6 +8,6 @@
 #define BLUE        "\x1b[34m"
 #define MAGENTA     "\x1b[35m"
 #define CYAN        "\x1b[36m"
-#define GRAY        "\x1b[37m"
+#define GRAY        "\x1b[38;5;242m"
 
 #endif

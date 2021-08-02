@@ -41,6 +41,11 @@ void switch_options(int arg, char *optarg, options_t *options) {
       exit(EXIT_SUCCESS);
       break;
 
+    case 's':
+      shell_types();
+      exit(EXIT_SUCCESS);
+      break;
+
     case 'H':
       options->host = optarg;
       break;
@@ -72,7 +77,7 @@ void options_parser(int argc, char *argv[], options_t *options) {
 
   while (true) {
     int option_index = 0;
-    arg = getopt_long(argc, argv, "hvH:p:l:", long_options, &option_index);
+    arg = getopt_long(argc, argv, "hvsH:p:l:", long_options, &option_index);
 
     if (arg == -1) break;
 
